@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input{
+    border: 1px solid red;
+}
+
+input::placeholder{
+    color: blue;
+}
+
+p{
+    font-size: 40px;
+}
+
+p::first-letter{
+    color: brown;
+}
+p::after{
+    content:"abacate";
+}
