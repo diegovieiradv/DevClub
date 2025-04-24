@@ -80,7 +80,38 @@ p{
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 1px;
+}
 
+@media screen and (max-width:650px){
 
-
+header{
+    width: 500px;
+    margin-top: 47px;
+}
+.link-header{
+    font-size: 15px;
+}
+.button-header{
+    width:100px ;
+    height: 45px;
+    font-size: 15px
+}
+.logo-image{
+    width: 400px;
+    height: 400px;
+}
+section{
+    width: 620px;
+}
+h1{
+    font-size: 43px;
+}
+p{
+    font-size: 14px;
+}
+.button-main{
+    width:100px ;
+    height: 45px;
+    font-size: 15px;
+}
 }
