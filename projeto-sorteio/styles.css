@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Share Tech", sans-serif;
+}
+
+body{
+    background: black;
+}
+
+.box-primary{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}   
+
+
+img{
+height: 300px;
+width: 300px;
+
+}
+h1{
+    font-size: 80px;
+    color: white;
+    text-align: center;
+}
+
+p{
+    color: white;
+}
+
+input{
+
+}
+
+button{
+
+}
