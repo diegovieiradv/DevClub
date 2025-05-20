@@ -3,7 +3,10 @@ function generateNumber() {
   const min = parseInt(document.querySelector(".input-min").value);
   const max = parseInt(document.querySelector(".input-max").value);
 
-  const result = Math.floor(Math.random() * (max - min + 1)) + min;
-
-  resultadoInput.value = result;
+  if (max > min) {
+    const result = Math.floor(Math.random() * (max - min + 1)) + min;
+    resultadoInput.value = result;
+  } else {
+    alert("O valor minimo tem que ser MENOR que o valor máximo");
+  }
 }
