@@ -9,12 +9,15 @@ const contacts = [
 ];
 
 function search() {
-  for (let i = 0; i < contacts.length; i++) {
+  while (i < contacts.length) {
+  
     if (input.value.toLowerCase() === contacts[i].name.toLowerCase()) {
       p.innerHTML = `Contato encontrado Nome: ${contacts[i].name} Tel: ${contacts[i].number}`;
+      found = true
 
       break;
-    } else {
+      } i++; 
+      if (!found) {
       p.innerHTML = "Contato não encontrado, tente novamente";
     }
   }
