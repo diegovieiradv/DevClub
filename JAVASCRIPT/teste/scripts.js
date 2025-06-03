@@ -1,81 +1,20 @@
-const contacts = [
-    { name: "Rodolfo", number: "(21) 9233232223" },
-    { name: "Sara", number: "(22) 322233223" },
-    { name: "Ana", number: "(11) 919992222" },
-    { name: "Diego", number: "(21) 9941413926" },
-];
-
-
-
-
-contacts.forEach(function (item, index) {
-    console.log(` ${index + 1}) Nome: ${item.name}, Contato: ${item.number}`)
-});
-
-
-const variavel = "Diego"
-console.log(variavel)
-
-function nomeNaTela() {
-    console.log("Dev")
-}
-nomeNaTela()
-
-
-function sayMyName(name) {
-    console.log(`O nome é: ${name}`)
-}
-sayMyName("Aline")
-
-function sum(value, value2) {
-    console.log(value + value2)
-}
-sum(20, 40)
-
-function sub(value, value2) {
-    console.log(value - value2)
-}
-sub(50, 33)
-
-function div(value, value2) {
-    console.log(value / value2)
-}
-div(30, 6)
-
-function mul(value, value2) {
-    console.log(value * value2)
-}
-mul(3, 5)
-
-
-
-function sum(value, value2) {
-    const result = value + value2
-    return result
-}
-
-const myResult = sum(20, 10)
-console.log("Resultado:" + myResult)
-
-
-
-const cart = [10, 244, 99, 2, 20, 33, 250]
-let finalValue = 0
+const cart = [10, 244, 99, 2, 20, 33, 250];
+let finalValueWithdDiscount = 0;
 
 function calculatedDiscount(price, discount) {
-    const result = (price * discount) / 100
-    return result
+  const result = (price * discount) / 100;
+  return result;
 }
 
 cart.forEach((value) => {
-    if (value > 30) {
-        const discount = calculatedDiscount(value, 10)
-        finalValue = finalValue + (value - discount)
-    }
-    else {
-        finalValue += value
-    }
+  if (value > 30) {
+    const discount = calculatedDiscount(value, 10);
+    finalValueWithdDiscount = finalValueWithdDiscount + (value - discount);
+  } else {
+    finalValue = +value;
+  }
 });
 
-console.log(finalValue)
-
+console.log(
+  `Valor total da compra foi de: R$ ${finalValue}), Porém você teve um desconto e irá pagar: ${finalValueWithdDiscount}`
+);
