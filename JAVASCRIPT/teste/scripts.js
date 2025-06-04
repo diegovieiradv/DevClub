@@ -6,15 +6,19 @@ function calculatedDiscount(price, discount) {
   return result;
 }
 
+cart.forEach(value => {
+  finalValueWithdDiscount + value;
+});
+
 cart.forEach((value) => {
   if (value > 30) {
     const discount = calculatedDiscount(value, 10);
     finalValueWithdDiscount = finalValueWithdDiscount + (value - discount);
   } else {
-    finalValue = +value;
+    finalValueWithdDiscount = finalValueWithdDiscount + value;
   }
 });
 
 console.log(
-  `Valor total da compra foi de: R$ ${finalValue}), Porém você teve um desconto e irá pagar: ${finalValueWithdDiscount}`
+  `Valor total da compra foi de: R$ ${finalValue}), Porém você teve um desconto e irá pagar: R$ ${finalValueWithdDiscount} E você economizou: R$ ${}`
 );
