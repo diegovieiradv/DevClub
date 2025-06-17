@@ -6,25 +6,42 @@
 }
 
 body {
-  background-color: #121212;
-  color: #ffffff;
+  background: url(assets/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 .container {
-  padding: 20px;
-  background-color: #ffffff;
+  padding: 50px;
+  background-color: #ffffffb4;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 50%;
+  height: 50%;
   max-width: 600px;
 }
 h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 50px;
+  margin: 20px 20px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(136, 136, 136);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+p {
+  font-size: 30px;
+  margin: 10px 10px;
 }
