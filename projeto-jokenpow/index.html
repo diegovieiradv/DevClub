@@ -10,13 +10,15 @@
     <div class="container">
       <h1>JokenPô</h1>
     
-            <div class="button">
-              <button id="rock">&#x1F44A</button>
-              <button id="paper">&#x1f590</button>
-              <button id="scissors">&#x270c</button>
+            <div class="buttons">
+              <button id="rock" onclick="playHuman('rock')">&#x1F44A</button>
+              <button id="paper" onclick="playHuman('paper')">&#x1f590</button>
+              <button id="scissors" onclick="playHuman('scissors')">&#x270c</button>
             </div>
-            <p>Pontuação: <span>0</span></p>
-            <p>Pontuação da Maquina: <span>0</span></p>
+            <p class="your-score">Pontuação: <span id="human-score">0</span></p>
+            <p class="machine-score">Pontuação da Maquina: <span id="machine-score">0</span></p>
+
+            <p class="result"></p>
     </div>   
   </body>
 </html>

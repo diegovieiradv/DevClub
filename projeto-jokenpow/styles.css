@@ -23,25 +23,60 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 60%;
   max-width: 600px;
 }
 h1 {
   font-size: 50px;
+  font-weight: bold;
   margin: 20px 20px;
 }
 button {
   padding: 10px 20px;
-  font-size: 1.2rem;
+  font-size: 4rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-color: rgb(136, 136, 136);
-  color: white;
-  transition: background-color 0.3s ease;
+  transition: opacity 0.5s ease-in-out;
 }
+button:hover {
+  opacity: 0.7;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+.buttons {
+  display: flex;
+  margin: 30px 30px;
+  justify-content: space-around;
+  width: 100%;
+}
+
 p {
   font-size: 30px;
   margin: 10px 10px;
+  font-weight: bold;
+}
+
+#rock {
+  background-color: #ff0000;
+}
+
+#paper {
+  background-color: #00ff00;
+}
+
+#scissors {
+  background-color: #0000ff;
+}
+.your-score span {
+  font-weight: bold;
+  color: rgb(47, 0, 255);
+}
+.machine-score span {
+  font-weight: bold;
+  color: rgb(255, 0, 0);
 }
