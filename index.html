@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BR Bank - Banco Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "brand-green": "#90EE90",
+              "brand-blue": "#4169E1",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-sans">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center">
+            <div class="text-2xl font-bold text-brand-blue">BR Bank</div>
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="#" class="text-gray-700 hover:text-brand-blue"
+              >PÁGINA INICIAL</a
+            >
+            <a href="#" class="text-gray-700 hover:text-brand-blue"
+              >ATM OU AGÊNCIAS</a
+            >
+            <a href="#" class="text-gray-700 hover:text-brand-blue"
+              >SOBRE NÓS</a
+            >
+            <a href="#" class="text-gray-700 hover:text-brand-blue">AJUDA</a>
+            <a href="#" class="text-gray-700 hover:text-brand-blue"
+              >SAIBA MAIS</a
+            >
+          </div>
+          <div class="flex items-center space-x-4">
+            <button
+              class="bg-brand-green text-white px-6 py-2 rounded-lg hover:bg-opacity-90"
+            >
+              ABRA SUA CONTA
+            </button>
+            <button
+              class="bg-brand-blue text-white px-6 py-2 rounded-lg hover:bg-opacity-90"
+            >
+              ACESSE SUA CONTA
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative bg-white overflow-hidden">
+      <div class="max-w-7xl mx-auto">
+        <div
+          class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32"
+        >
+          <main
+            class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
+          >
+            <div class="sm:text-center lg:text-left">
+              <h1
+                class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl"
+              >
+                <span class="block">ONLINE BANKING</span>
+                <span class="block text-brand-blue">PESSOA FÍSICA</span>
+              </h1>
+              <p
+                class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
+              >
+                Acesse sua conta de forma segura e faça todas as suas operações
+                bancárias com facilidade e praticidade.
+              </p>
+              <div
+                class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
+              >
+                <div class="rounded-md shadow">
+                  <a
+                    href="#"
+                    class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand-blue hover:bg-opacity-90 md:py-4 md:text-lg md:px-10"
+                  >
+                    Começar Agora
+                  </a>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+      <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+        <img
+          class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+          src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+          alt="Homem usando tablet"
+        />
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="py-12 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Online Banking Card -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="flex items-center">
+              <div class="flex-shrink-0">
+                <svg
+                  class="h-12 w-12 text-brand-blue"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+              <div class="ml-4">
+                <h3 class="text-lg font-medium text-gray-900">
+                  Online Banking
+                </h3>
+                <p class="mt-2 text-gray-600">
+                  Acesse sua conta e faça todas as suas operações bancárias
+                  online.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile Banking Card -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="flex items-center">
+              <div class="flex-shrink-0">
+                <svg
+                  class="h-12 w-12 text-brand-blue"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+              <div class="ml-4">
+                <h3 class="text-lg font-medium text-gray-900">
+                  Mobile Banking
+                </h3>
+                <p class="mt-2 text-gray-600">
+                  Tenha o banco na palma da sua mão com nosso aplicativo móvel.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+      <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-white font-bold mb-4">Sobre o BR Bank</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  >Quem Somos</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white">Carreiras</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  >Sustentabilidade</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white font-bold mb-4">Produtos</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  >Conta Corrente</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  >Investimentos</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white">Cartões</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white font-bold mb-4">Ajuda</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  >Central de Ajuda</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white">Segurança</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white">Contato</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white font-bold mb-4">Legal</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  >Privacidade</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  >Termos de Uso</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white">Cookies</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-8 border-t border-gray-700 pt-8">
+          <p class="text-gray-400 text-center">
+            &copy; 2024 BR Bank. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
