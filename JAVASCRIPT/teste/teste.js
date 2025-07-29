@@ -22,3 +22,16 @@ if (seuNome == "Diego") {
     alert(`Olá Diego, seu saldo é de ${100}`);
   }
 }*/
+
+/*let contador = 10;
+while (contador >= 0) {
+  console.log(`Contador: ${contador}`);
+  contador--;
+}*/
+
+let numeroMaximo = prompt("Digite um número para a contagem regressiva");
+
+while (numeroMaximo >= 0) {
+  console.log(`Contagem regressiva: ${numeroMaximo}`);
+  numeroMaximo--;
+}
