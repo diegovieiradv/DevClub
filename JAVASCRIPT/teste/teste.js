@@ -29,9 +29,14 @@ while (contador >= 0) {
   contador--;
 }*/
 
+/*
 let numeroMaximo = prompt("Digite um número para a contagem regressiva");
 
 while (numeroMaximo >= 0) {
   console.log(`Contagem regressiva: ${numeroMaximo}`);
   numeroMaximo--;
-}
+} */
+
+
+const seuNome = "Diego";
+alert(`Olá ${seuNome}, bem vindo!`);
